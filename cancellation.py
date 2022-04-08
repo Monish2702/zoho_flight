@@ -8,7 +8,7 @@ def cancel(): #to cancel seats for a booking id
  print(dict_list[cancel_id])
 
  cancel_seat=input("Enter index of seat number to be cancelled from the above list: ")
- print(data)
+#  print(data)
 
  del data[cancel_id]["Seat_prices"][cancel_seat]
  #updating the data file
