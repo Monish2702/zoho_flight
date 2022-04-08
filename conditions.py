@@ -12,8 +12,8 @@ def rows_colums(x):
 
 #2_to get the structure of the flight---------------------------------
 def flight_structure(flight_no,class_type): 
- if(flight_no == "a101"):
-  with open("a101.txt") as f: #opens structure of flight A101
+ try:
+  with open(flight_no) as f: #opens structure of flight A101
     x=f.readline() #reads the first line , x stands for business class(A101)
     rows_x,columns_x=rows_colums(x)
     y=f.readline() #reads the second line , y stands for economy class(A101)
@@ -23,18 +23,18 @@ def flight_structure(flight_no,class_type):
     elif(class_type == "e"):
         return rows_y,columns_y
  #end of A101
- elif(flight_no == "a102"):
-  with open("a102.txt") as f: #opens structure of flight A102
-    x=f.readline() #reads the first line , x stands for business class(A101)
-    rows_x,columns_x=rows_colums(x)
-    y=f.readline() #reads the second line , y stands for economy class(A101)
-    rows_y,columns_y=rows_colums(y)
-    if(class_type == "b"):
-        return rows_x,columns_x
-    elif(class_type == "e"):
-        return rows_y,columns_y
+#  elif(flight_no == "a102"):
+#   with open("a102.txt") as f: #opens structure of flight A102
+#     x=f.readline() #reads the first line , x stands for business class(A101)
+#     rows_x,columns_x=rows_colums(x)
+#     y=f.readline() #reads the second line , y stands for economy class(A101)
+#     rows_y,columns_y=rows_colums(y)
+#     if(class_type == "b"):
+#         return rows_x,columns_x
+#     elif(class_type == "e"):
+#         return rows_y,columns_y
 
- else: print("Flight not available")
+ except: print("Flight not available")
 
 
 
