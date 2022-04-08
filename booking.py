@@ -85,9 +85,9 @@ if(user_choice==1):
  id_list =[]
 
  for i in range(no_of_bookings):
-  N=4  #id generator
+  #id generator
   id = ''.join(secrets.choice(string.ascii_uppercase + string.digits)
-                                                  for i in range(N))
+                                                  for i in range(4))
   id_list.append(id)
 
   print("\nYour booking id is: ",str(id))
