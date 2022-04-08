@@ -13,7 +13,7 @@ def rows_colums(x):
 #2_to get the structure of the flight---------------------------------
 def flight_structure(flight_no,class_type): 
  try:
-  with open(flight_no) as f: #opens structure of flight A101
+  with open(flight_no) as f: #opens structure of flight
     x=f.readline() #reads the first line , x stands for business class(A101)
     rows_x,columns_x=rows_colums(x)
     y=f.readline() #reads the second line , y stands for economy class(A101)
