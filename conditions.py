@@ -76,7 +76,7 @@ def seat_exist(row,col,flight_no,class_type):
     columns=convert_to_type(columns)
     print("Your column look like:",columns)
     if(row<=rows and col<=len(columns)): #check if the entered seat is in the range of the flight
-        return columns
+        return columns #for example ['w','A','A','M','W']
     else:
         return False
 #------------------end of seat_exist()----------------
