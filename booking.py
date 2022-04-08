@@ -86,7 +86,7 @@ if(user_choice==1):
 
  for i in range(no_of_bookings):
   #id generator
-  id = ''.join(secrets.choice(string.ascii_uppercase + string.digits)
+  id = ''.join(secrets.choice(string.ascii_lowercase + string.digits)
                                                   for i in range(4))
   id_list.append(id)
 
