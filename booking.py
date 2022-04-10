@@ -77,7 +77,7 @@ def display():
 print("WELCOME TO ZOHO AIRLINES CHENNAI TO MANGALORE\n")
 user_choice=int(input("Please enter your choice:(1 for booking,2 for cancellation): "))
 if(user_choice==1):
- flight_no = input("Enter flight number:(a101.txt or a102.txt)[as of now] ")
+ flight_no = input("Enter flight number:(a101.txt, a102.txt, a103.txt)[as of now] ")
  class_type = input("Enter class:(e-Economy or b-Business) ")
  no_of_bookings = int(input("Enter number of bookings: "))
  meal=input("Do you want a meals for this booking?(y/n)")
